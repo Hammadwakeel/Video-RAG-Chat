@@ -7,23 +7,12 @@ This FastAPI-based Video RAG (Retrieval-Augmented Generation) system provides en
 3. **Query** the RAG system
 4. **Manage** sessions (list, view, delete)
 
+Testing Link:
+https://v0-video-rag.vercel.app/
+
 ---
 
 ## Endpoint Flow
-
-```mermaid
-graph TD
-  A[POST /register] --> B[POST /token]
-  B --> C[POST /transcribe]
-  B --> D[POST /upload]
-  C --> E[Start RAG session]
-  D --> E
-  E --> F[POST /query]
-  E --> G[GET /sessions]
-  G --> H[GET /sessions/{session_id}]
-  H --> F
-  G --> I[DELETE /sessions/{session_id}]
-```
 
 1. **User Registration & Login**  
    - **POST /register**: Create a new user.  
@@ -103,10 +92,4 @@ rag_system/
 ├── .env
 ├── requirements.txt
 └── README.md
-```
-```
-
-Testing Link:
-https://v0-video-rag.vercel.app/
-
 ```
