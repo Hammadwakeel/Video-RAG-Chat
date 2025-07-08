@@ -11,7 +11,7 @@ class Settings:
     DATABASE_NAME = os.getenv("DATABASE_NAME")
     COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
-    CONNECTION_STRING = f"mongodb+srv://{MONGO_USERNAME}:{MONGO_PASSWORD}@cluster0.ywbtfhf.mongodb.net/{DATABASE_NAME}?retryWrites=true&w=majority"
+    CONNECTION_STRING = f"mongodb+srv://{MONGO_USERNAME}:{MONGO_PASSWORD}@cluster0.oi9z5ig.mongodb.net/{DATABASE_NAME}?retryWrites=true&w=majority"
 
     # Security
     SECRET_KEY = os.getenv("SECRET_KEY")
